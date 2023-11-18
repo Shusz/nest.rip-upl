@@ -10,15 +10,17 @@ curl
 ```
 
 ### Installation on Arch  
-``sudo pacman -S curl flameshot jq``  
+``sudo pacman -S curl flameshot jq git``  
 
 ### Installation on Ubuntu/Debian or derivatives.  
-``sudo apt-get install jq flameshot curl``  
+``sudo apt-get install jq flameshot curl git``  
 
 ## Setup  
 Make the script executable  
 ```
-chmod +x PATH_TO_SCRIPT_HERE
+git clone https://github.com/Shusz/nest.rip-upl.git
+cd nest.rip-upl
+chmod +x ss.sh
 ```  
 
 Create a file named ".auth" with your nest.rip auth token in the same directory as the shell script.  
@@ -28,3 +30,6 @@ echo YOUR_AUTH_TOKEN_HERE >> .auth
 
 ## Usage  
 Execute the script, if everything works, add it as a shortcut in your window manager.  
+```
+./ss.sh
+```
