@@ -7,6 +7,7 @@ Basically just a simple shell script to take a screenshot using flameshot and au
 jq
 flameshot
 curl
+git
 ```
 
 ### Installation on Arch  
