@@ -4,8 +4,7 @@ rndn=$RANDOM.png
 flameshot gui -p /tmp/$rndn
 api="https://nest.rip/api/files/upload"
 file="/tmp/$rndn"
-
-auth_header="Authorization: hexlocation_54knUheHNC0D8NxBWmCBXKevuWWqjB8c"
+auth_header="Authorization: `cat .auth`"
 ct_header="Content-Type: multipart/form-data"
 
 curl -X POST \
